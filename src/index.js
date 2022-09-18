@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 //import Routes from './routes';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import {Splash as Education} from './views/education/Splash';
 import { Splash as Projects } from './views/projects/Splash';
 import { Splash as Resume } from './views/resume/Splash';
@@ -18,7 +18,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
     <Navbar/>
-    <BrowserRouter>
+    <HashRouter history="hashHistory">
       <Routes>
       <Route path="/portfoilo" element={<Home />}></Route>
         <Route path="/sideHustle" element={<SideHustles />}></Route>
@@ -27,7 +27,7 @@ root.render(
         <Route path="/resume" element={<Resume />}></Route>
         <Route path="/education" element={<Education />}></Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </>
 
 );
