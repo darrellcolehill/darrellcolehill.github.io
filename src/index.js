@@ -5,10 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 //import Routes from './routes';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import {Education} from './views/education/Splash';
-import { Projects } from './views/projects/Splash';
-import { Resume } from './views/resume/Splash';
-import { Work } from './views/work/Splash';
+import {Splash as Education} from './views/education/Splash';
+import { Splash as Projects } from './views/projects/Splash';
+import { Splash as Resume } from './views/resume/Splash';
+import { Splash as Work } from './views/work/Splash';
 import { Navbar } from './components/Navbar';
 
 
