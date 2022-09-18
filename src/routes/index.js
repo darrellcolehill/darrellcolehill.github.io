@@ -1,3 +1,3 @@
-export default function Routes() {
-    <></>
+export default function RoutesComponent() {
+<></>
 }
