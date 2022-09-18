@@ -20,7 +20,7 @@ root.render(
     <Navbar/>
     <HashRouter history="hashHistory">
       <Routes>
-      <Route path="/portfoilo" element={<Home />}></Route>
+      <Route path="/" element={<Home />}></Route>
         <Route path="/sideHustle" element={<SideHustles />}></Route>
         <Route path="/workExperience" element={<WorkExperience />}></Route>
         <Route path="/projects" element={<Projects />}></Route>
