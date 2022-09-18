@@ -8,7 +8,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {Splash as Education} from './views/education/Splash';
 import { Splash as Projects } from './views/projects/Splash';
 import { Splash as Resume } from './views/resume/Splash';
-import { Splash as Work } from './views/work/Splash';
+import { Splash as WorkExperience } from './views/work/Splash';
+import { Splash as Home } from './views/home/Splash';
+import { Splash as SideHustles } from './views/sideHustles/Splash';
 import { Navbar } from './components/Navbar';
 
 
@@ -18,11 +20,12 @@ root.render(
     <Navbar/>
     <BrowserRouter>
       <Routes>
-        <Route path="/portfoilo"            element={<App />} />
-        <Route path="/portfoilo/education"  element={<Education />} />
-        <Route path="/portfoilo/projects"   element={<Projects />} />
-        <Route path="/portfoilo/resume"     element={<Resume />} />
-        <Route path="/portfoilo/work"       element={<Work />} />
+      <Route path="/portfoilo" element={<Home />}></Route>
+        <Route path="/sideHustle" element={<SideHustles />}></Route>
+        <Route path="/workExperience" element={<WorkExperience />}></Route>
+        <Route path="/projects" element={<Projects />}></Route>
+        <Route path="/resume" element={<Resume />}></Route>
+        <Route path="/education" element={<Education />}></Route>
       </Routes>
     </BrowserRouter>
   </>

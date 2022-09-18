@@ -20,7 +20,7 @@ function App() {
 
   <Navbar/>
 
-  <BrowserRouter>
+  {/* <BrowserRouter>
     <Routes>
         <Route path="/portfoilo" element={<Home />}></Route>
         <Route path="/sideHustle" element={<SideHustles />}></Route>
@@ -29,7 +29,7 @@ function App() {
         <Route path="/resume" element={<Resume />}></Route>
         <Route path="/education" element={<Education />}></Route>
     </Routes>
-  </BrowserRouter>
+  </BrowserRouter> */}
 </div>
   );
 }
