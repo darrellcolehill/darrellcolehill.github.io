@@ -20,9 +20,10 @@ function App() {
 
   <Navbar/>
 
+  <Home />
   {/* <BrowserRouter>
     <Routes>
-        <Route path="/portfoilo" element={<Home />}></Route>
+        <Route path="/portfolio" element={<Home />}></Route>
         <Route path="/sideHustle" element={<SideHustles />}></Route>
         <Route path="/workExperience" element={<WorkExperience />}></Route>
         <Route path="/projects" element={<Projects />}></Route>
