@@ -1,1 +1,8 @@
 # darrellcolehill.github.io
+
+## TODO
+- [ ] Remove default icon
+- [ ] Choose color palette for light/dark mode
+- [ ] Make primary, primary, and tertiary button styles
+- [ ] Outline various sections/pages
+- [ ] Add routing between sections/pages
