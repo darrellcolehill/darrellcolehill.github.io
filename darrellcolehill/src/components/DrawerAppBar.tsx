@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useNavigate } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import {
   AppBar, 
@@ -16,13 +17,25 @@ import {
 } from '@mui/material';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
+const navItems = ['Home', 'About', 'DevLogs', "Projects"];
 
 export default function DrawerAppBar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const navigate = useNavigate(); // Use the useNavigate hook
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
+  };
+
+  const handleNavigation = (item: string) => {
+    if (item === 'DevLogs') {
+      navigate('/devlogs');
+    } else if(item === 'Home') {
+      navigate('/');
+    } else if(item === 'Projects') {
+      navigate('/projects')
+    }
+    // TODO: Add more navigation conditions here if needed
   };
 
   const drawer = (
@@ -30,7 +43,7 @@ export default function DrawerAppBar() {
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
+            <ListItemButton sx={{ textAlign: 'center' }} onClick={() => handleNavigation(item)}>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
@@ -39,12 +52,12 @@ export default function DrawerAppBar() {
     </Box>
   );
 
-  const container = document.body
+  const container = document.body;
 
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav">
+      <AppBar component="nav" sx={{ backgroundColor: '#4B4453' }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -57,7 +70,7 @@ export default function DrawerAppBar() {
           </IconButton>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
+              <Button key={item} sx={{ color: '#fff' }} onClick={() => handleNavigation(item)}>
                 {item}
               </Button>
             ))}
