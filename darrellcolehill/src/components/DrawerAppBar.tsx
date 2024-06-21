@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import {
   AppBar, 
@@ -17,7 +17,7 @@ import {
 } from '@mui/material';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'DevLogs'];
+const navItems = ['Home', 'About', 'DevLogs', "Projects"];
 
 export default function DrawerAppBar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -32,6 +32,8 @@ export default function DrawerAppBar() {
       navigate('/devlogs');
     } else if(item === 'Home') {
       navigate('/');
+    } else if(item === 'Projects') {
+      navigate('/projects')
     }
     // TODO: Add more navigation conditions here if needed
   };
@@ -55,7 +57,7 @@ export default function DrawerAppBar() {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav">
+      <AppBar component="nav" sx={{ backgroundColor: '#4B4453' }}>
         <Toolbar>
           <IconButton
             color="inherit"
