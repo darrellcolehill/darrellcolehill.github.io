@@ -29,9 +29,9 @@ export default function DrawerAppBar() {
 
   const handleNavigation = (item: string) => {
     if (item === 'DevLogs') {
-      navigate('/page1'); // Navigate to /page1 if DevLogs is clicked
+      navigate('/devlogs');
     } else if(item === 'Home') {
-      navigate('/'); // Navigate to /page1 if DevLogs is clicked
+      navigate('/');
     }
     // TODO: Add more navigation conditions here if needed
   };

@@ -8,7 +8,7 @@ ReactDOM.render(
   <HashRouter>
     <Routes>
       <Route path="/" element={<App />}>
-        <Route path="page1" element={<DevLogs />} />
+        <Route path="devlogs" element={<DevLogs />} />
       </Route>
     </Routes>
   </HashRouter>,
