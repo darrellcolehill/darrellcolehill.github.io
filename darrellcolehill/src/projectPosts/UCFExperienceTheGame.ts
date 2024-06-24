@@ -9,7 +9,8 @@ const post: ProjectPost = {
 **Key Features:**
 - **Programmer Model or Memory Mall:** Includes a basic version UCF's Memory Mall for realistic navigation. Used Google maps to make the dimensions of the playable area roughly 1:1 with campus.
 - **Dynamic Enemy Behaviors:** Features a variety of enemy players with different movement speeds and behaviors, simulating real student traffic.
-- **Player Objectives:** The player's goal is to reach their desired building without running over or colliding with any enemy players.`,
+- **Player Objectives:** The player's goal is to reach their desired building without running over or colliding with any enemy players.
+- **integration with Smart Trash Bike:** The play can be controlled using regular keyboard inputs, any by the Smart Trash Bike I made in a previous project`,
     summary: 
         `**Overview:** This project involves creating a 3D game in Unity that simulates the challenging experience of biking through the University of Central Florida (UCF) campus during peak class times. The player must navigate a partial model of the UCF campus, avoiding collisions with other students who have varying movement patterns and speeds.`,
     chips: ["Unity", "3D Game", "Simulation", "Physics"]
