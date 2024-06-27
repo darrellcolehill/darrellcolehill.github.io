@@ -12,12 +12,11 @@ import {
   ListItemButton, 
   ListItemText, 
   Toolbar, 
-  Typography, 
   Button 
 } from '@mui/material';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'DevLogs', "Projects"];
+const navItems = ['Home', 'DevLogs', "Projects"];
 
 export default function DrawerAppBar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -94,12 +93,6 @@ export default function DrawerAppBar() {
           {drawer}
         </Drawer>
       </nav>
-      <Box component="main" sx={{ p: 3 }}>
-        <Toolbar />
-        <Typography>
-          Darrell..... in theaters soon....
-        </Typography>
-      </Box>
     </Box>
   );
 }

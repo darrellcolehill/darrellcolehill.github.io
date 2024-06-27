@@ -1,9 +1,9 @@
-import OutlinedCard from "../components/OutlinedCard"
+import DevlogCard from "../components/DevlogCard"
 
 
 function DevLogs() {
     return (
-        <OutlinedCard/>
+        <DevlogCard/>
     )
 }
 

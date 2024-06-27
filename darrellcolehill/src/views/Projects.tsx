@@ -1,9 +1,9 @@
-import OutlinedCard from "../components/OutlinedCard"
+import ProjectCard from "../components/ProjectCard"
 
 
 function Projects() {
     return (
-        <OutlinedCard/>
+        <ProjectCard/>
     )
 }
 
