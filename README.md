@@ -7,5 +7,5 @@
 - [ ] Make primary, primary, and tertiary button styles
 - [ ] Outline various sections/pages
 - [X] Add routing between sections/pages
-- [ ] Add Markdown parser component for devlog "posts"
+- [X] Add Markdown parser component for devlog "posts"
 
