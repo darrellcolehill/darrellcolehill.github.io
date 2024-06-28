@@ -6,10 +6,18 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { CardHeader, Chip, Grid } from '@mui/material';
 import ReactMarkdown from 'react-markdown';
-import { post } from "../projectPosts/trashBike"
+import { ProjectPost } from '../../types';
 
-const card = (
-  <React.Fragment>
+interface ProjectCardProps {
+  post: ProjectPost
+}
+
+export default function ProjectCard({post} : ProjectCardProps) {
+  return (
+    <Grid container justifyContent="center" sx={{ padding: 2 }}>
+      <Grid item xs={12}>
+          <Card variant="outlined">
+          <React.Fragment>
     <CardHeader
       title={
         <Typography variant="h5" component="div" sx={{ color: '#2C3E50' }}>
@@ -33,14 +41,6 @@ const card = (
       <Button size="small" sx={{ color: '#3498DB' }}>Learn More</Button>
     </CardActions>
   </React.Fragment>
-);
-
-export default function ProjectCard() {
-  return (
-    <Grid container justifyContent="center" sx={{ padding: 2 }}>
-      <Grid item xs={12}>
-          <Card variant="outlined">
-            {card}
           </Card>
       </Grid>
     </Grid>
