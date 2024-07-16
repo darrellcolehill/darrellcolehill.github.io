@@ -3,7 +3,7 @@
 ## TODO
 - [ ] Remove default icon
 - [X] Update title
-- [ ] Choose color palette for light/dark mode
+- [ ] Choose color palette
 - [ ] Make primary, primary, and tertiary button styles
 - [ ] Outline various sections/pages
 - [X] Add routing between sections/pages
