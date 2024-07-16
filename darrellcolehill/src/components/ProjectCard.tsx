@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { CardHeader, Chip, Grid } from '@mui/material';
 import ReactMarkdown from 'react-markdown';
-import { post } from "../projectPosts/trashBike"
+import {post} from '../ProjectPosts/trashBike'
 
 const card = (
   <React.Fragment>
